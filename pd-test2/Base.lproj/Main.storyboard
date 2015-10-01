@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" value="0.25" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4X8-Dp-meL">
+                                <rect key="frame" x="-2" y="20" width="604" height="31"/>
+                                <connections>
+                                    <action selector="volume1:" destination="BYZ-38-t0r" eventType="valueChanged" id="0XX-ca-lKe"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" value="0.25" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="aSD-el-Urb">
+                                <rect key="frame" x="-2" y="117" width="604" height="31"/>
+                                <connections>
+                                    <action selector="volume3:" destination="BYZ-38-t0r" eventType="valueChanged" id="9bP-6L-hPA"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" value="0.25" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="10y-b5-Oxs">
+                                <rect key="frame" x="-2" y="179" width="604" height="31"/>
+                                <connections>
+                                    <action selector="volume4:" destination="BYZ-38-t0r" eventType="valueChanged" id="7aO-M1-X0A"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="200" minValue="200" maxValue="2000" translatesAutoresizingMaskIntoConstraints="NO" id="UwQ-Q7-hh3">
+                                <rect key="frame" x="-2" y="257" width="604" height="31"/>
+                                <connections>
+                                    <action selector="pitch1:" destination="BYZ-38-t0r" eventType="valueChanged" id="jTr-K6-Kyq"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1000" minValue="200" maxValue="2000" translatesAutoresizingMaskIntoConstraints="NO" id="0oO-db-oS6">
+                                <rect key="frame" x="-2" y="315" width="604" height="31"/>
+                                <connections>
+                                    <action selector="pitch1:" destination="BYZ-38-t0r" eventType="valueChanged" id="e5f-Mv-wL8"/>
+                                    <action selector="pitch2:" destination="BYZ-38-t0r" eventType="valueChanged" id="fWA-3U-4N2"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2000" minValue="200" maxValue="2000" translatesAutoresizingMaskIntoConstraints="NO" id="RdC-IH-4i6">
+                                <rect key="frame" x="-2" y="367" width="604" height="31"/>
+                                <connections>
+                                    <action selector="pitch1:" destination="BYZ-38-t0r" eventType="valueChanged" id="wEl-05-phb"/>
+                                    <action selector="pitch2:" destination="BYZ-38-t0r" eventType="valueChanged" id="tmD-GZ-ERg"/>
+                                    <action selector="pitch3:" destination="BYZ-38-t0r" eventType="valueChanged" id="rM2-QY-SS7"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1000" minValue="200" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="IFE-ZV-rTP">
+                                <rect key="frame" x="-2" y="423" width="604" height="31"/>
+                                <connections>
+                                    <action selector="pitch1:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ozm-7T-LIL"/>
+                                    <action selector="pitch2:" destination="BYZ-38-t0r" eventType="valueChanged" id="VGV-yj-jT4"/>
+                                    <action selector="pitch3:" destination="BYZ-38-t0r" eventType="valueChanged" id="zRr-zf-gQr"/>
+                                    <action selector="pitch4:" destination="BYZ-38-t0r" eventType="valueChanged" id="Z11-R4-dXu"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HAd-BD-nuV">
+                                <rect key="frame" x="20" y="498" width="51" height="31"/>
+                                <connections>
+                                    <action selector="metro:" destination="BYZ-38-t0r" eventType="valueChanged" id="cdo-DJ-466"/>
+                                </connections>
+                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" value="0.25" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ib4-42-1NU">
+                                <rect key="frame" x="-2" y="66" width="604" height="31"/>
+                                <connections>
+                                    <action selector="volume2:" destination="BYZ-38-t0r" eventType="valueChanged" id="unT-Za-PrF"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4X8-Dp-meL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="5qX-i5-mCW"/>
+                            <constraint firstItem="4X8-Dp-meL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NWN-sY-TvZ"/>
+                            <constraint firstAttribute="trailing" secondItem="4X8-Dp-meL" secondAttribute="trailing" id="eI9-VY-xCT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="317"/>
+        </scene>
+    </scenes>
+</document>
